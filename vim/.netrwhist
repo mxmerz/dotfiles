@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/mxmerz/Desktop/hbs-mgmt-css'
+let g:netrw_dirhist_2='/Volumes/Hobbes/Studium/6b-14ss/SMT-Solving/smt-b/src/lib/modules/UFBModule'
+let g:netrw_dirhist_3='/Volumes/Hobbes/Studium/Wohnen/HBS/01 Netz-AG/www-hbs'
