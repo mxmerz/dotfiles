@@ -58,4 +58,3 @@ set nu
 
 " set list characters
 set listchars=eol:$,tab:→·,trail:█,extends:…,precedes:…,conceal:…
-

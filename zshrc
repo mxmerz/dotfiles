@@ -2,9 +2,6 @@
 ZSH=$HOME/dotfiles/oh-my-zsh
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/Library/TeX/texbin
-# :/Users/mxmerz/.rbenv/shims
-# :/Users/mxmerz/.gem/ruby/1.9.1/bin
-# :/Users/mxmerz/.rbenv/versions/1.9.3-p0/bin
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -50,12 +47,6 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git emoji-clock colored-man battery) # textmate brew
+plugins=(git emoji-clock colored-man battery)
 
 source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
-
-# for octopress rake new_post["..."]
-# view http://travisjeffery.com/b/2012/01/zshs-extended-glob-and-octopresss-new-post-script/
-alias rake="noglob rake"
