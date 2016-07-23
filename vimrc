@@ -4,6 +4,9 @@
 " Syntax Highlighting
 syntax on
 
+" Color scheme
+color smyck
+
 " Turn on filetype recognition
 filetype plugin indent on
 
