@@ -54,7 +54,8 @@ set autoindent
 set smartindent
 
 " line numbers
-set nu
+set number
+set ruler
 
 " set list characters
 set listchars=eol:$,tab:→·,trail:█,extends:…,precedes:…,conceal:…
