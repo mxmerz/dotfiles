@@ -63,5 +63,8 @@ set smartindent
 set number
 set ruler
 
+" Set encoding
+set encoding=utf-8
+
 " set list characters
 set listchars=eol:$,tab:→·,trail:█,extends:…,precedes:…,conceal:…
