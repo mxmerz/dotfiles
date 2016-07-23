@@ -1,6 +1,9 @@
 " Set some options
 " Docs are at: http://vimdoc.sourceforge.net/htmldoc/options.html
 
+" Pathogen
+execute pathogen#infect()
+
 " Syntax Highlighting
 syntax on
 
