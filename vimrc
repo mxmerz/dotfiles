@@ -67,7 +67,7 @@ set ruler
 set encoding=utf-8
 
 " set list characters
-set listchars=nbsp:·,tab:▸\ ,eol:¬,trail:█,extends:>,precedes:<,conceal:…
+set listchars=nbsp:·,tab:▸\ ,eol:¬,trail:█,extends:>,precedes:<
 set list
 
 " add json syntax highlighting
