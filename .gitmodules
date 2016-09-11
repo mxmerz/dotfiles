@@ -8,10 +8,6 @@
 	path = vim/bundle/vim-pathogen
 	url = git@github.com:tpope/vim-pathogen.git
 
-#[submodule "vim/bundle/ctrlpvim"]
-#	path = vim/bundle/ctrlp.vim
-#	url = git@github.com:kien/ctrlpvim.git
-
 [submodule "vim/bundle/ackvim"]
 	path = vim/bundle/ackvim
 	url = git@github.com:mileszs/ackvim.git
