@@ -67,7 +67,8 @@ set ruler
 set encoding=utf-8
 
 " set list characters
-set listchars=space:␣,tab:─⇥,trail:█,extends:>,precedes:<,conceal:…
+set listchars=nbsp:·,tab:▸\ ,eol:¬,trail:█,extends:>,precedes:<,conceal:…
+set list
 
 " add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
