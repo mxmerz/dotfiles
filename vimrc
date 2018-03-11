@@ -13,6 +13,9 @@ color smyck
 " Turn on filetype recognition
 filetype plugin indent on
 
+set mouse=a
+set ttymouse=xterm2
+
 " tmux-vim fixes
 if &term =~ '^screen' && exists('$TMUX')
 	set mouse+=a
