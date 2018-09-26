@@ -1,0 +1,84 @@
+" Set encoding
+set encoding=utf-8
+
+" syntax, filetype
+syntax on
+filetype plugin indent on
+
+" line numbers
+set number
+set ruler
+
+"set mouse=a
+"set ttymouse=xterm2
+
+" set list characters
+set listchars=nbsp:·,tab:▸\ ,eol:¬,trail:█,extends:>,precedes:<
+set list
+
+
+" --------
+"  neovim
+" --------
+
+" Python support.
+let g:python_host_prog = '/Users/mxmerz/.virtualenvs/neovim2/bin/python'
+let g:python3_host_prog = '/Users/mxmerz/.virtualenvs/neovim3/bin/python'
+
+
+" ---------
+"  Plugins
+" ---------
+
+" Specify a directory for plugins
+call plug#begin('~/.local/share/nvim/plugged')
+
+	" Color scheme: dracula.
+	"Plug 'dracula/vim', { 'as': 'dracula' }
+
+	" Install deoplete plugin for code completion support.
+	if has('nvim')
+		Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+	else
+		Plug 'Shougo/deoplete.nvim'
+		Plug 'roxma/nvim-yarp'
+		Plug 'roxma/vim-hug-neovim-rpc'
+	endif
+	let g:deoplete#enable_at_startup = 1
+
+	" Install gitgutter plugin for support of git change markers next to line
+	" numbers.
+	"Plug 'airblade/vim-gitgutter'
+	Plug 'mhinz/vim-signify'
+
+	" Python language server
+	Plug 'zchee/deoplete-jedi'
+
+	" Fuzzy file opening.
+	Plug 'cloudhead/neovim-fuzzy'
+" Initialize plugin system
+call plug#end()
+
+
+" ---------------
+"  Plugin Config
+" ---------------
+
+" signify: only try git
+let g:signify_vcs_list = [ 'git' ]
+
+
+" --------------
+"  Key Bindings
+" --------------
+
+" For fuzzy file finding.
+nnoremap <C-p> :FuzzyOpen<CR>
+
+
+" --------------
+"  Color Scheme
+" --------------
+
+set background=dark
+colorscheme smyck
