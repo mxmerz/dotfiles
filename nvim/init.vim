@@ -71,6 +71,13 @@ call plug#end()
 let g:signify_vcs_list = [ 'git' ]
 let g:signify_sign_show_count = 0
 
+" signify: use heavier signs (probably unnecessary on retina displays)
+let g:signify_sign_add               = '✚'
+let g:signify_sign_delete            = '▁'
+let g:signify_sign_delete_first_line = '▔'
+" let g:signify_sign_change            = '!' " options: ≠ • ~
+" let g:signify_sign_changedelete      = g:signify_sign_change
+
 highlight SignifySignAdd             cterm=bold ctermbg=238 ctermfg=2
 highlight SignifySignChange          cterm=bold ctermbg=238 ctermfg=3
 highlight SignifySignDelete          cterm=bold ctermbg=238 ctermfg=1
