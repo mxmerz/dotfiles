@@ -4,6 +4,8 @@ set encoding=utf-8
 " syntax, filetype
 syntax on
 filetype plugin indent on
+set background=dark
+colorscheme smyck
 
 " line numbers
 set number
@@ -66,7 +68,13 @@ call plug#end()
 
 " signify: only try git
 let g:signify_vcs_list = [ 'git' ]
+let g:signify_sign_show_count = 0
 
+highlight SignifySignAdd             cterm=bold ctermbg=238 ctermfg=2
+highlight SignifySignChange          cterm=bold ctermbg=238 ctermfg=3
+highlight SignifySignDelete          cterm=bold ctermbg=238 ctermfg=1
+highlight SignifySignChangeDelete    cterm=bold ctermbg=238 ctermfg=3
+highlight SignifySignDeleteFirstLine cterm=bold ctermbg=238 ctermfg=1
 
 " --------------
 "  Key Bindings
@@ -75,10 +83,3 @@ let g:signify_vcs_list = [ 'git' ]
 " For fuzzy file finding.
 nnoremap <C-p> :FuzzyOpen<CR>
 
-
-" --------------
-"  Color Scheme
-" --------------
-
-set background=dark
-colorscheme smyck
