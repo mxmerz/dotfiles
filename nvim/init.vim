@@ -55,6 +55,10 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 	" Fuzzy file opening.
 	Plug 'cloudhead/neovim-fuzzy'
+
+	" Support for TOML files.
+	Plug 'cespare/vim-toml'
+
 " Initialize plugin system
 call plug#end()
 
