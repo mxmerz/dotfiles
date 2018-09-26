@@ -35,9 +35,6 @@ let g:python3_host_prog = '/Users/mxmerz/.virtualenvs/neovim3/bin/python'
 " Specify a directory for plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
-	" Color scheme: dracula.
-	"Plug 'dracula/vim', { 'as': 'dracula' }
-
 	" Install deoplete plugin for code completion support.
 	if has('nvim')
 		Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
