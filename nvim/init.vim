@@ -50,7 +50,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 	"Plug 'airblade/vim-gitgutter'
 	Plug 'mhinz/vim-signify'
 
-	" Python language server
+	" Language server: Python
 	Plug 'zchee/deoplete-jedi'
 
 	" Fuzzy file opening.
@@ -69,6 +69,7 @@ call plug#end()
 
 " signify: only try git
 let g:signify_vcs_list = [ 'git' ]
+" signify: don't show number of lines that were removed
 let g:signify_sign_show_count = 0
 
 " signify: use heavier signs (probably unnecessary on retina displays)
@@ -78,6 +79,7 @@ let g:signify_sign_delete_first_line = '▔'
 " let g:signify_sign_change            = '!' " options: ≠ • ~
 " let g:signify_sign_changedelete      = g:signify_sign_change
 
+" signify: fixup colors
 highlight SignifySignAdd             cterm=bold ctermbg=238 ctermfg=2
 highlight SignifySignChange          cterm=bold ctermbg=238 ctermfg=3
 highlight SignifySignDelete          cterm=bold ctermbg=238 ctermfg=1
