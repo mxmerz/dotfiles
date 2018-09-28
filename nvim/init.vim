@@ -35,6 +35,9 @@ let g:python3_host_prog = '/Users/mxmerz/.virtualenvs/neovim3/bin/python'
 " Specify a directory for plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
+	" Language server client.
+	Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+
 	" Install deoplete plugin for code completion support.
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 	let g:deoplete#enable_at_startup = 1
@@ -59,6 +62,17 @@ call plug#end()
 " ---------------
 "  Plugin Config
 " ---------------
+
+" LanguageServer-neovim: Required for operations modifying multiple buffers like rename.
+set hidden
+
+" LanguageServer-neovim: Start language servers.
+let g:LanguageClient_serverCommands = {
+    \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+    \ }
+
+" LanguageServer-neovim: Add keybindings.
+nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 
 " signify: only try git
 let g:signify_vcs_list = [ 'git' ]
