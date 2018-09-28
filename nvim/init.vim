@@ -41,7 +41,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 	" Install gitgutter plugin for support of git change markers next to line
 	" numbers.
-	"Plug 'airblade/vim-gitgutter'
 	Plug 'mhinz/vim-signify'
 
 	" Language server: Python
