@@ -32,6 +32,35 @@ let g:python3_host_prog = '/Users/mxmerz/.virtualenvs/neovim3/bin/python'
 "  Plugins
 " ---------
 
+" LanguageServer-neovim: Set signs.
+let g:LanguageClient_diagnosticsDisplay = {
+    \     1: {
+    \         "name": "Error",
+    \         "texthl": "ALEError",
+    \         "signText": "x",
+    \         "signTexthl": "ALEErrorSign",
+    \     },
+    \     2: {
+    \         "name": "Warning",
+    \         "texthl": "ALEWarning",
+    \         "signText": "!",
+    \         "signTexthl": "ALEWarningSign",
+    \     },
+    \     3: {
+    \         "name": "Information",
+    \         "texthl": "ALEInfo",
+    \         "signText": "i",
+    \         "signTexthl": "ALEInfoSign",
+    \     },
+    \     4: {
+    \         "name": "Hint",
+    \         "texthl": "ALEInfo",
+    \         "signText": "➤",
+    \         "signTexthl": "ALEInfoSign",
+    \     },
+    \ }
+
+
 " Specify a directory for plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
@@ -74,6 +103,11 @@ let g:LanguageClient_serverCommands = {
 " LanguageServer-neovim: Add keybindings.
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 
+" LanguageServer-neovim: fixup colors.
+highlight ALEErrorSign   cterm=bold ctermbg=238 ctermfg=1
+highlight ALEWarningSign cterm=bold ctermbg=238 ctermfg=3
+highlight ALEInfoSign    cterm=bold ctermbg=238 ctermfg=8
+
 " signify: only try git
 let g:signify_vcs_list = [ 'git' ]
 " signify: don't show number of lines that were removed
@@ -83,7 +117,7 @@ let g:signify_sign_show_count = 0
 let g:signify_sign_add               = '✚'
 let g:signify_sign_delete            = '▁'
 let g:signify_sign_delete_first_line = '▔'
-" let g:signify_sign_change            = '!' " options: ≠ • ~
+let g:signify_sign_change            = '•' " options: ! ≠ • ~
 " let g:signify_sign_changedelete      = g:signify_sign_change
 
 " signify: fixup colors
