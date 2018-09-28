@@ -36,13 +36,7 @@ let g:python3_host_prog = '/Users/mxmerz/.virtualenvs/neovim3/bin/python'
 call plug#begin('~/.local/share/nvim/plugged')
 
 	" Install deoplete plugin for code completion support.
-	if has('nvim')
-		Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-	else
-		Plug 'Shougo/deoplete.nvim'
-		Plug 'roxma/nvim-yarp'
-		Plug 'roxma/vim-hug-neovim-rpc'
-	endif
+	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 	let g:deoplete#enable_at_startup = 1
 
 	" Install gitgutter plugin for support of git change markers next to line
