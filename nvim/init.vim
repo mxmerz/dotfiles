@@ -104,6 +104,7 @@ set hidden
 " LanguageServer-neovim: Start language servers.
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+    \ 'python': [],
     \ }
 
 " LanguageServer-neovim: Add keybindings.
