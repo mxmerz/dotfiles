@@ -1,6 +1,9 @@
 " Set encoding
 set encoding=utf-8
 
+" lilypond syntax support.
+set runtimepath+=/Applications/LilyPond.app/Contents/Resources/share/lilypond/current/vim/
+
 " syntax, filetype
 syntax on
 filetype plugin indent on
