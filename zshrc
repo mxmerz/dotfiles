@@ -7,6 +7,12 @@ PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
 PATH=$PATH:/Library/TeX/texbin
 # Add rust.
 PATH=$PATH:/Users/mxmerz/.cargo/bin
+# Add Python.
+PATH=$PATH:/Users/mxmerz/Library/Python/2.7/bin
+# Add rumy gems to PATH. (Verify with `gem environment`)
+PATH=$PATH:/usr/local/lib/ruby/gems/2.5.0
+PATH=$PATH:/Users/mxmerz/.gem/ruby/2.5.0
+PATH=$PATH:/usr/local/Cellar/ruby/2.5.3/lib/ruby/gems/2.5.0
 
 export PATH=$PATH
 
