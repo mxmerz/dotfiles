@@ -84,6 +84,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 	" Support for TOML files.
 	Plug 'cespare/vim-toml'
 
+	" Support for pandoc's MarkDown variant.
+	Plug 'vim-pandoc/vim-pandoc-syntax'
+
 " Initialize plugin system
 call plug#end()
 
