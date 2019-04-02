@@ -16,6 +16,10 @@ PATH=$PATH:/usr/local/Cellar/ruby/2.5.3/lib/ruby/gems/2.5.0
 
 export PATH=$PATH
 
+# Set Editor.
+export VISUAL=nvim
+export EDITOR=$VISUAL
+
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
