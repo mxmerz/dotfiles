@@ -28,7 +28,7 @@ set list
 
 " Python support.
 let g:python_host_prog = '/Users/mxmerz/.virtualenvs/neovim2/bin/python'
-let g:python3_host_prog = '/Users/mxmerz/.virtualenvs/neovim3/bin/python'
+let g:python3_host_prog = '/Users/mxmerz/.venvs/neovim3/bin/python'
 
 
 " ---------
