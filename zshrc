@@ -35,6 +35,7 @@ ZSH_THEME="merz-fino"
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tow="gittower ."
+alias e="exa"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
