@@ -36,6 +36,11 @@ alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tow="gittower ."
 alias e="exa"
+alias el="exa -l"
+alias ela="exa -la"
+alias nv="nvim"
+alias lg="lazygit"
+
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
