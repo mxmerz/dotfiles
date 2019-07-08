@@ -20,6 +20,8 @@ export PATH=$PATH
 export VISUAL=nvim
 export EDITOR=$VISUAL
 
+# Set locale.
+export LC_ALL=en_US.UTF-8
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
