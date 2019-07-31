@@ -1,0 +1,9 @@
+session_name: 'ma'
+start_directory: ~/Developer/ma
+windows:
+- window_name: zsh
+  shell_command: zsh
+- window_name: 'nvim'
+  shell_command: nvim
+- window_name: 'git'
+  shell_command: lazygit

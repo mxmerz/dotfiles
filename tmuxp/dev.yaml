@@ -1,0 +1,10 @@
+session_name: 'dev'
+windows:
+- panes:
+    - blank
+- window_name: 'nvim'
+  panes:
+    - shell_command: nvim
+- window_name: 'git'
+  panes:
+    - shell_command: lazygit
