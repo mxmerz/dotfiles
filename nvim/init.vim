@@ -93,6 +93,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 	" (La)TeX support
 	Plug 'lervag/vimtex'
 
+	" NERD Commenter for easy un-/commenting
+	Plug 'scrooloose/nerdcommenter'
+
 " Initialize plugin system
 call plug#end()
 
@@ -145,6 +148,10 @@ let g:tex_flavor='latex'
 " vimtex: conceal only current line
 set conceallevel=1
 let g:tex_conceal='abdmg'
+
+" NERDCommenter
+let g:NERDSpaceDelims = 1
+
 
 " --------------
 "  Key Bindings
