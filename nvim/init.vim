@@ -90,6 +90,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 	" Support for pandoc's MarkDown variant.
 	Plug 'vim-pandoc/vim-pandoc-syntax'
 
+	" (La)TeX support
+	Plug 'lervag/vimtex'
+
 " Initialize plugin system
 call plug#end()
 
@@ -133,6 +136,15 @@ highlight SignifySignChange          cterm=bold ctermbg=238 ctermfg=3
 highlight SignifySignDelete          cterm=bold ctermbg=238 ctermfg=1
 highlight SignifySignChangeDelete    cterm=bold ctermbg=238 ctermfg=3
 highlight SignifySignDeleteFirstLine cterm=bold ctermbg=238 ctermfg=1
+
+" vimtex: neovim-specific config
+"let g:vimtex_compiler_progname = 'nvr'
+" vimtex: sometimes vim incorrectly categorizes latex as plain tex. set tex
+" flavor explicitly
+let g:tex_flavor='latex'
+" vimtex: conceal only current line
+set conceallevel=1
+let g:tex_conceal='abdmg'
 
 " --------------
 "  Key Bindings
