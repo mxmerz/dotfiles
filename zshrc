@@ -14,6 +14,8 @@ PATH=$PATH:~/Library/Python/3.7/bin
 PATH=$PATH:/usr/local/lib/ruby/gems/2.5.0
 PATH=$PATH:~/.gem/ruby/2.5.0
 PATH=$PATH:/usr/local/Cellar/ruby/2.5.3/lib/ruby/gems/2.5.0
+# Add PHP composer vendor bin directory
+PATH=$PATH:~/.composer/vendor/bin
 
 export PATH=$PATH
 
