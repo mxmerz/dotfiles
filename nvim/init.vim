@@ -170,6 +170,7 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 "  Key Bindings
 " --------------
 
+" Map the leader to space key
+let mapleader = " "
 " For fuzzy file finding.
 nnoremap <C-p> :FuzzyOpen<CR>
-
