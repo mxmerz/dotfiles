@@ -96,6 +96,10 @@ call plug#begin('~/.local/share/nvim/plugged')
 	" NERD Commenter for easy un-/commenting
 	Plug 'scrooloose/nerdcommenter'
 
+	" Snippets
+	Plug 'SirVer/ultisnips'
+	Plug 'honza/vim-snippets'
+
 " Initialize plugin system
 call plug#end()
 
@@ -151,6 +155,15 @@ let g:tex_conceal='abdmg'
 
 " NERDCommenter
 let g:NERDSpaceDelims = 1
+
+" Snippets
+" Trigger configuration. Do not use <tab> if you
+" use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+" If you want :UltiSnipsEdit to split your window.
+"let g:UltiSnipsEditSplit="vertical"
 
 
 " --------------
