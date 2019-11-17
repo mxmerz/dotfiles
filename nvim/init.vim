@@ -151,7 +151,7 @@ highlight SignifySignDeleteFirstLine cterm=bold ctermbg=238 ctermfg=1
 let g:tex_flavor='latex'
 " vimtex: conceal only current line
 set conceallevel=1
-let g:tex_conceal='abdmg'
+let g:tex_conceal='abmg'
 
 " NERDCommenter
 let g:NERDSpaceDelims = 1
