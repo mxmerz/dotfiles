@@ -18,4 +18,8 @@ echo "Deploy tmux config."
 rm ~/.tmux.conf
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 
+# echo "Deploy timewarrior config."
+# mkdir -p ~/.timewarrior
+# ln -s ~/dotfiles/timewarrior.cfg ~/.timewarrior/timewarrior.cfg
+
 echo "Done."
