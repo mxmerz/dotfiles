@@ -27,6 +27,7 @@ PATH=$PATH:~/.composer/vendor/bin
 
 export PATH=$PATH
 
+
 # Set Editor.
 export VISUAL=nvim
 export EDITOR=$VISUAL
@@ -34,13 +35,13 @@ export EDITOR=$VISUAL
 # Set locale.
 export LC_ALL=en_US.UTF-8
 
+
 # Set name of the theme to load.
 # ZSH_THEME="merz-fino"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-# Example aliases
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Aliases.
 alias tow="gittower ."
 alias did="vim +'normal Go' +'r!date' ~/did.txt"
 alias e="exa"
