@@ -2,6 +2,14 @@
 ZSH=$HOME/dotfiles/oh-my-zsh
 
 
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block, everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+
 PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
 # Add TeX.
 PATH=$PATH:/Library/TeX/texbin
@@ -30,11 +38,8 @@ export LC_ALL=en_US.UTF-8
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="merz"
-ZSH_THEME="merz-fino"
-#ZSH_THEME="af-magic"
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="half-life"
+# ZSH_THEME="merz-fino"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Example aliases
 alias zshconfig="mate ~/.zshrc"
@@ -80,3 +85,6 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git emoji-clock colored-man battery)
 
 source $ZSH/oh-my-zsh.sh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
