@@ -12,6 +12,10 @@ echo "Deploy vim config."
 ln -s ~/dotfiles/vim ~/.vim
 ln -s ~/dotfiles/vimrc ~/.vimrc
 
+echo "Deploy nvim config."
+mkdir -p ~/.config
+ln -s ~/dotfiles/nvim ~/.config/nvim
+
 echo "Deploy tmux config."
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 
