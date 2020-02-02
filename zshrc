@@ -26,6 +26,11 @@ export EDITOR=$VISUAL
 export LC_ALL=en_US.UTF-8
 
 
+# Set name of the theme to load.
+# ZSH_THEME="merz-fino"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+
 # Plugins.
 source ~/.zplug/init.zsh
 
@@ -50,11 +55,6 @@ zplug load
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
-
-# Set name of the theme to load.
-# ZSH_THEME="merz-fino"
-ZSH_THEME="powerlevel10k/powerlevel10k"
 
 
 # Aliases.
