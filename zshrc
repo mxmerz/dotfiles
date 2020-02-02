@@ -55,7 +55,7 @@ alias lg="lazygit"
 source ~/.zplug/init.zsh
 
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-zplug romkatv/powerlevel10k, as:theme, depth:1
+zplug 'romkatv/powerlevel10k', as:theme, depth:1
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
