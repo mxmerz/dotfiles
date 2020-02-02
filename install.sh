@@ -7,6 +7,7 @@ git submodule update
 echo "Deploy zsh config."
 rm ~/.zshrc
 ln -s ~/dotfiles/zshrc ~/.zshrc
+ln -s ~/dotfiles/p10k.zsh ~/.p10k.zsh
 
 echo "Deploy vim config."
 rm -r ~/.vim
