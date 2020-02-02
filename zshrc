@@ -1,6 +1,4 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/dotfiles/oh-my-zsh
-
+# Set the PATH.
 
 PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
 # Add TeX.
