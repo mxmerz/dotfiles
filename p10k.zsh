@@ -89,18 +89,18 @@
     # midnight_commander      # midnight commander shell (https://midnight-commander.org/)
     # nix_shell               # nix shell (https://nixos.org/nixos/nix-pills/developing-with-nix-shell.html)
     # vpn_ip                # virtual private network indicator
-    # todo                    # todo items (https://github.com/todotxt/todo.txt-cli)
-    timewarrior             # timewarrior tracking status (https://timewarrior.net/)
-    time                    # current time
+    # load                    # CPU load
+    # ram                     # free RAM
+    # disk_usage              # disk usage
+    # swap                    # used swap
+    battery                 # internal battery
     # =========================[ Line #2 ]=========================
     newline
-    load                    # CPU load
-    ram                     # free RAM
-    disk_usage              # disk usage
-    battery                 # internal battery
-    # swap                    # used swap
     # public_ip             # public IP address
     # proxy                 # system-wide http/https/ftp proxy
+    timewarrior             # timewarrior tracking status (https://timewarrior.net/)
+    # todo                    # todo items (https://github.com/todotxt/todo.txt-cli)
+    time                    # current time
     # example               # example user-defined segment (see prompt_example function below)
   )
 
