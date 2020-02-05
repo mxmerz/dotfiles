@@ -44,18 +44,6 @@
     vcs                     # git status
     # =========================[ Line #2 ]=========================
     newline
-    prompt_char             # prompt symbol
-  )
-
-  # The list of segments shown on the right. Fill it with less important segments.
-  # Right prompt on the last prompt line (where you are typing your commands) gets
-  # automatically hidden when the input line reaches it. Right prompt above the
-  # last prompt line gets hidden if it would overlap with left prompt.
-  typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
-    # =========================[ Line #1 ]=========================
-    status                  # exit code of the last command
-    command_execution_time  # duration of the last command
-    background_jobs         # presence of background jobs
     direnv                  # direnv status (https://direnv.net/)
     virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html)
     anaconda                # conda environment (https://conda.io/)
@@ -88,6 +76,18 @@
     # vim_shell               # vim shell indicator (:sh)
     # midnight_commander      # midnight commander shell (https://midnight-commander.org/)
     # nix_shell               # nix shell (https://nixos.org/nixos/nix-pills/developing-with-nix-shell.html)
+    prompt_char             # prompt symbol
+  )
+
+  # The list of segments shown on the right. Fill it with less important segments.
+  # Right prompt on the last prompt line (where you are typing your commands) gets
+  # automatically hidden when the input line reaches it. Right prompt above the
+  # last prompt line gets hidden if it would overlap with left prompt.
+  typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
+    # =========================[ Line #1 ]=========================
+    status                  # exit code of the last command
+    command_execution_time  # duration of the last command
+    background_jobs         # presence of background jobs
     # vpn_ip                # virtual private network indicator
     # load                    # CPU load
     # ram                     # free RAM
