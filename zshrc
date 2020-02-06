@@ -101,6 +101,8 @@ alias el="exa -l"
 alias ela="exa -la"
 alias nv="nvim"
 alias lg="lazygit"
+alias tw="timew"
+alias tws="timew week && timew summary :ids"
 
 
 # fzf fuzzy finder
