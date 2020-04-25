@@ -14,15 +14,15 @@ else
 endif
 
 " Vim Language Server support
-"Plug 'prabirshrestha/async.vim'
-"Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
 " LSP automatic detection for some languages
-"Plug 'mattn/vim-lsp-settings'
+Plug 'mattn/vim-lsp-settings'
 
-Plug 'autozimu/LanguageClient-neovim', {
-	\ 'branch': 'next',
-	\ 'do': 'bash install.sh',
-	\ }
+"Plug 'autozimu/LanguageClient-neovim', {
+	"\ 'branch': 'next',
+	"\ 'do': 'bash install.sh',
+	"\ }
 
 " (Optional) Multi-entry selection UI.
 Plug 'junegunn/fzf'
@@ -46,32 +46,32 @@ call plug#end()
 
 " LanguageClient-neovim
 " Required for operations modifying multiple buffers like rename.
-set hidden
+"set hidden
 
-let g:LanguageClient_serverCommands = {
-    \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
-    \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
-    \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
-    \ 'python': ['/usr/local/bin/pyls'],
-    \ 'ruby': ['~/.rbenv/shims/solargraph', 'stdio'],
-    \ }
+"let g:LanguageClient_serverCommands = {
+    "\ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+    "\ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
+    "\ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
+    "\ 'python': ['/usr/local/bin/pyls'],
+    "\ 'ruby': ['~/.rbenv/shims/solargraph', 'stdio'],
+    "\ }
 
-nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+"nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 " Or map each action separately
-nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
-nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+"nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+"nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+"nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
 " let g:lsp_signs_information = {'text': '✗'}
 
 " Configure LSP for swift
-if executable('sourcekit-lsp')
-	au User lsp_setup call lsp#register_server({
-		\ 'name': 'sourcekit-lsp',
-		\ 'cmd': {server_info->['sourcekit-lsp']},
-		\ 'whitelist': ['swift'],
-		\ })
-endif
+"if executable('sourcekit-lsp')
+	"au User lsp_setup call lsp#register_server({
+		"\ 'name': 'sourcekit-lsp',
+		"\ 'cmd': {server_info->['sourcekit-lsp']},
+		"\ 'whitelist': ['swift'],
+		"\ })
+"endif
 
 
 " Syntax Highlighting
