@@ -26,6 +26,10 @@ Plug 'vim-airline/vim-airline'
 " Fuzzy file opening
 Plug 'ctrlpvim/ctrlp.vim'
 
+" Language Syntax
+" Elixir
+Plug 'elixir-editors/vim-elixir'
+
 " Initialize plugin system
 call plug#end()
 
