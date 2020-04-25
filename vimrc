@@ -41,6 +41,9 @@ Plug 'tyru/open-browser.vim'
 Plug 'aklt/plantuml-syntax'
 Plug 'weirongxu/plantuml-previewer.vim'
 
+" NerdCommenter
+Plug 'preservim/nerdcommenter'
+
 " Initialize plugin system
 call plug#end()
 
