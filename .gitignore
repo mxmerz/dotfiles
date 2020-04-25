@@ -3,3 +3,5 @@ zsh_custom/themes/powerlevel10k
 
 .DS_Store
 .netrwhist
+
+vim/plugged
