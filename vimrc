@@ -29,6 +29,10 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Language Syntax
 " Elixir
 Plug 'elixir-editors/vim-elixir'
+" PlantUML
+Plug 'tyru/open-browser.vim'
+Plug 'aklt/plantuml-syntax'
+Plug 'weirongxu/plantuml-previewer.vim'
 
 " Initialize plugin system
 call plug#end()
