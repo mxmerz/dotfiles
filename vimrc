@@ -1,8 +1,13 @@
 " Set some options
 " Docs are at: http://vimdoc.sourceforge.net/htmldoc/options.html
 
-" Pathogen
-execute pathogen#infect()
+" Specify a directory for plugins
+" " - For Neovim: stdpath('data') . '/plugged'
+" " - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+" Initialize plugin system
+call plug#end()
 
 " Syntax Highlighting
 syntax on
