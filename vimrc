@@ -6,6 +6,13 @@
 " " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
+" Vim Git markers
+if has('nvim') || has('patch-8.0.902')
+  Plug 'mhinz/vim-signify'
+else
+  Plug 'mhinz/vim-signify', { 'branch': 'legacy' }
+endif
+
 " Vim Language Server support
 "Plug 'prabirshrestha/async.vim'
 "Plug 'prabirshrestha/vim-lsp'
@@ -72,6 +79,23 @@ syntax on
 
 " Color scheme
 color smyck
+
+" signify: use heavier signs (probably unnecessary on retina displays)
+"let g:signify_sign_add               = '✚'
+let g:signify_sign_delete            = '▁'
+let g:signify_sign_delete_first_line = '▔'
+let g:signify_sign_change            = '•' " options: ! ≠ • ~
+" let g:signify_sign_changedelete      = g:signify_sign_change
+
+" Sign column in same color as background
+highlight SignColumn ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
+
+" signify: fixup colors
+highlight SignifySignAdd             cterm=bold ctermfg=2
+highlight SignifySignChange          cterm=bold ctermfg=3
+highlight SignifySignDelete          cterm=bold ctermfg=1
+highlight SignifySignChangeDelete    cterm=bold ctermfg=3
+highlight SignifySignDeleteFirstLine cterm=bold ctermfg=1
 
 " Turn on filetype recognition
 filetype plugin indent on
