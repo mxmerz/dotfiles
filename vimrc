@@ -17,6 +17,15 @@ Plug 'autozimu/LanguageClient-neovim', {
 	\ 'do': 'bash install.sh',
 	\ }
 
+" (Optional) Multi-entry selection UI.
+Plug 'junegunn/fzf'
+
+" Airline
+Plug 'vim-airline/vim-airline'
+
+" Fuzzy file opening
+Plug 'ctrlpvim/ctrlp.vim'
+
 " Initialize plugin system
 call plug#end()
 
