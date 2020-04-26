@@ -1,84 +1,21 @@
 " Set some options
 " Docs are at: http://vimdoc.sourceforge.net/htmldoc/options.html
 
-" Specify a directory for plugins
-" " - For Neovim: stdpath('data') . '/plugged'
-" " - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
+" Include Plugins
+source ~/.vim/plugins.vim
 
-" Vim Git markers
-if has('nvim') || has('patch-8.0.902')
-  Plug 'mhinz/vim-signify'
-else
-  Plug 'mhinz/vim-signify', { 'branch': 'legacy' }
-endif
-
-" Vim Language Server support
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
-" LSP automatic detection for some languages
-Plug 'mattn/vim-lsp-settings'
-
-"Plug 'autozimu/LanguageClient-neovim', {
-	"\ 'branch': 'next',
-	"\ 'do': 'bash install.sh',
-	"\ }
-
-" (Optional) Multi-entry selection UI.
-Plug 'junegunn/fzf'
-
-" Airline
-Plug 'vim-airline/vim-airline'
-
-" Language Syntax
-" Elixir
-Plug 'elixir-editors/vim-elixir'
-" PlantUML
-Plug 'tyru/open-browser.vim'
-Plug 'aklt/plantuml-syntax'
-Plug 'weirongxu/plantuml-previewer.vim'
-
-" NerdCommenter
-Plug 'preservim/nerdcommenter'
-
-" Initialize plugin system
-call plug#end()
-
-" LanguageClient-neovim
-" Required for operations modifying multiple buffers like rename.
-"set hidden
-
-"let g:LanguageClient_serverCommands = {
-    "\ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
-    "\ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
-    "\ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
-    "\ 'python': ['/usr/local/bin/pyls'],
-    "\ 'ruby': ['~/.rbenv/shims/solargraph', 'stdio'],
-    "\ }
-
-"nnoremap <F5> :call LanguageClient_contextMenu()<CR>
-" Or map each action separately
-"nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-"nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
-"nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
-
-" let g:lsp_signs_information = {'text': '✗'}
-
-" Configure LSP for swift
-"if executable('sourcekit-lsp')
-	"au User lsp_setup call lsp#register_server({
-		"\ 'name': 'sourcekit-lsp',
-		"\ 'cmd': {server_info->['sourcekit-lsp']},
-		"\ 'whitelist': ['swift'],
-		"\ })
-"endif
-
+" Configure Language Server plugin
+source ~/.vim/lsp.vim
 
 " Syntax Highlighting
 syntax on
 
 " Color scheme
 color smyck
+
+" Sign column always visible
+" https://superuser.com/a/558885
+set signcolumn=yes
 
 " fzf
 nnoremap <C-p> :FZF<CR>
