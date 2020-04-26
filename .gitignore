@@ -5,3 +5,5 @@ zsh_custom/themes/powerlevel10k
 .netrwhist
 
 vim/plugged
+
+*.swp
