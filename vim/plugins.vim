@@ -10,11 +10,14 @@ else
   Plug 'mhinz/vim-signify', { 'branch': 'legacy' }
 endif
 
+" Language Server
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " Vim Language Server support
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
+"Plug 'prabirshrestha/async.vim'
+"Plug 'prabirshrestha/vim-lsp'
 " LSP automatic detection for some languages
-Plug 'mattn/vim-lsp-settings'
+"Plug 'mattn/vim-lsp-settings'
 
 "Plug 'autozimu/LanguageClient-neovim', {
 	"\ 'branch': 'next',
