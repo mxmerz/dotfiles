@@ -30,9 +30,6 @@ Plug 'junegunn/fzf'
 " Airline
 Plug 'vim-airline/vim-airline'
 
-" Fuzzy file opening
-Plug 'ctrlpvim/ctrlp.vim'
-
 " Language Syntax
 " Elixir
 Plug 'elixir-editors/vim-elixir'
@@ -82,6 +79,9 @@ syntax on
 
 " Color scheme
 color smyck
+
+" fzf
+nnoremap <C-p> :FZF<CR>
 
 " signify: use heavier signs (probably unnecessary on retina displays)
 "let g:signify_sign_add               = '✚'
