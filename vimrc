@@ -7,8 +7,14 @@ source ~/.vim/plugins.vim
 " Configure Language Server plugin
 source ~/.vim/lsp.vim
 
+" Set encoding
+set encoding=utf-8
+
 " Syntax Highlighting
 syntax on
+
+" Turn on filetype recognition
+filetype plugin indent on
 
 " Color scheme
 color smyck
@@ -23,9 +29,6 @@ highlight ColorColumn ctermbg=8 guibg=darkgrey
 
 " fzf
 nnoremap <C-p> :FZF<CR>
-
-" Turn on filetype recognition
-filetype plugin indent on
 
 " Configure mouse
 source ~/.vim/mouse.vim
@@ -45,9 +48,6 @@ set copyindent
 set preserveindent
 set autoindent
 set smartindent
-
-" Set encoding
-set encoding=utf-8
 
 " set list characters
 set listchars=nbsp:·,tab:▸\ ,eol:¬,trail:█,extends:>,precedes:<
