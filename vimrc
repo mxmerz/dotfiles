@@ -61,3 +61,11 @@ au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
 " Map the leader to space key
 let mapleader = " "
+
+" Configure NerdTree
+nnoremap <silent> <Leader>v :NERDTreeFind<CR>
+" Don't show help note
+let NERDTreeMinimalUI = 1
+" Open automatically if no files were specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif

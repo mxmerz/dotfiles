@@ -38,6 +38,9 @@ Plug 'tyru/open-browser.vim'
 Plug 'aklt/plantuml-syntax'
 Plug 'weirongxu/plantuml-previewer.vim'
 
+" NerdTree
+Plug 'preservim/nerdtree'
+
 " NerdCommenter
 Plug 'preservim/nerdcommenter'
 
