@@ -16,6 +16,11 @@ color smyck
 " Configure the gutter
 source ~/.vim/gutter.vim
 
+" Configure the color column
+" https://vi.stackexchange.com/a/357
+set colorcolumn=80 " comma-separete additional values (eg. 120)
+highlight ColorColumn ctermbg=8 guibg=darkgrey
+
 " fzf
 nnoremap <C-p> :FZF<CR>
 
