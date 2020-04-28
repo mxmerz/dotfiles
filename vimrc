@@ -27,14 +27,6 @@ source ~/.vim/gutter.vim
 set colorcolumn=81 " comma-separete additional values (eg. 120)
 highlight ColorColumn ctermbg=8 guibg=darkgrey
 
-" fzf
-nnoremap <C-p> :FZF<CR>
-
-" Configure mouse
-source ~/.vim/mouse.vim
-
-" backspace is allowed to go over newlines, start of insert,
-set backspace=indent,eol,start
 
 " turn expandtab off
 "set noexpandtab
@@ -59,8 +51,19 @@ au BufNewFile,BufRead *.json set ft=javascript
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
+" Configure keyboard
+
 " Map the leader to space key
 let mapleader = " "
+
+" backspace is allowed to go over newlines, start of insert,
+set backspace=indent,eol,start
+
+" fzf
+nnoremap <C-p> :FZF<CR>
+
+" Configure mouse
+source ~/.vim/mouse.vim
 
 " Configure NerdTree
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
