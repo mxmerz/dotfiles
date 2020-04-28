@@ -13,11 +13,6 @@ endif
 " Language Server
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-"Plug 'autozimu/LanguageClient-neovim', {
-	"\ 'branch': 'next',
-	"\ 'do': 'bash install.sh',
-	"\ }
-
 " (Optional) Multi-entry selection UI.
 Plug 'junegunn/fzf'
 
