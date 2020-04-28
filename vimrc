@@ -24,7 +24,7 @@ source ~/.vim/gutter.vim
 
 " Configure the color column
 " https://vi.stackexchange.com/a/357
-set colorcolumn=81 " comma-separete additional values (eg. 120)
+set colorcolumn=81 " comma-separate additional values (eg. 120)
 highlight ColorColumn ctermbg=8 guibg=darkgrey
 
 " Configure whitespace
