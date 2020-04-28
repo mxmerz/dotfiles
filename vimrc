@@ -27,13 +27,14 @@ source ~/.vim/gutter.vim
 set colorcolumn=81 " comma-separete additional values (eg. 120)
 highlight ColorColumn ctermbg=8 guibg=darkgrey
 
+" Configure whitespace
 
 " turn expandtab off
 "set noexpandtab
 
 " number of spaces a <tab> in the text stands for
-set ts=2 " tabstop
-set sw=2 " shiftwidth
+set tabstop=2
+set shiftwidth=2
 
 " set clever autoindent
 set copyindent
