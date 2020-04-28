@@ -1,3 +1,5 @@
+" Options for coc. Pretty much exactly what is in coc's README.
+
 " TextEdit might fail if hidden is not set.
 set hidden
 
