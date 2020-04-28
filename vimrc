@@ -46,9 +46,6 @@ set smartindent
 set listchars=nbsp:·,tab:▸\ ,eol:¬,trail:█,extends:>,precedes:<
 set list
 
-" add json syntax highlighting
-au BufNewFile,BufRead *.json set ft=javascript
-
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
