@@ -49,5 +49,5 @@ nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 " Don't show help note
 let NERDTreeMinimalUI = 1
 " Open automatically if no files were specified
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
